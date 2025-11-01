@@ -51,6 +51,7 @@ import {
 import {PanelServiceProvider} from '@osjs/panels';
 import {GUIServiceProvider} from '@osjs/gui';
 import {DialogServiceProvider} from '@osjs/dialogs';
+import {VoiceAgentServiceProvider} from './voice-agent.js';
 import config from './config.js';
 import './index.scss';
 import lottie from 'lottie-web';
@@ -69,6 +70,7 @@ const init = () => {
   osjs.register(PanelServiceProvider);
   osjs.register(DialogServiceProvider);
   osjs.register(GUIServiceProvider);
+  osjs.register(VoiceAgentServiceProvider);
 
   // Initialize Lottie splash if container exists
   const splash = document.getElementById('warp-splash');
